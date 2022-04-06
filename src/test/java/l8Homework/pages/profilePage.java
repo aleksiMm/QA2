@@ -2,10 +2,6 @@ package l8Homework.pages;
 
 import org.openqa.selenium.By;
 
-import static org.assertj.core.api.Assertions.assertThat;
-
-import org.openqa.selenium.WebDriver;
-
 public class profilePage extends BasePage {
 
     By firstName = By.id("inputFirstName");

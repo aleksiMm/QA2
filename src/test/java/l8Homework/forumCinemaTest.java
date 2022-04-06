@@ -7,12 +7,6 @@ import l8Homework.pages.profilePage;
 
 import org.junit.Test;
 
-import org.openqa.selenium.By;
-import org.openqa.selenium.chrome.ChromeDriver;
-
-import static org.assertj.core.api.Assertions.assertThat;
-
-import org.openqa.selenium.support.ui.Select;
 
 public class forumCinemaTest {
 
