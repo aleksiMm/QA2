@@ -5,7 +5,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.chrome.ChromeDriver;
 import static org.assertj.core.api.Assertions.assertThat;
 
-public class AliTest {
+public class AliTestHomework {
 
     @Test
     public void aliTatoo() {
