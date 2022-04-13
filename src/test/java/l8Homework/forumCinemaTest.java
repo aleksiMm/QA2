@@ -18,6 +18,7 @@ public class forumCinemaTest {
     @Test
     public void forumCinemaTest() {
         base.openChromeByUrl("https://www.forumcinemas.lv/rus");
+
         base.cLogin();
 
         login.enterUsername("smithalek777@gmail.com");
@@ -27,9 +28,13 @@ public class forumCinemaTest {
 
         profile.clearFirst();
         profile.changeFirstname("Ale");
+        profile.validateFn();
         profile.changeLastname("Smit");
+        profile.validateLn();
         profile.changeNumber("12345678");
+        profile.validatePhone();
         profile.changeCity("Rio");
+        profile.validateCity();
         profile.clickSave();
 
         try {

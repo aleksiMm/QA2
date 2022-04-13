@@ -1,6 +1,8 @@
 package l8Homework.pages;
 
 import org.openqa.selenium.By;
+import static org.assertj.core.api.Assertions.assertThat;
+
 
 public class profilePage extends BasePage {
 
@@ -23,16 +25,33 @@ public class profilePage extends BasePage {
         driver.findElement(firstName).sendKeys(firstname);
     }
 
-    public void changeLastname(String lastname) {
-        driver.findElement(lastName).sendKeys(lastname);
+    public void validateFn (){
+        String newText = driver.findElement(firstName).getAttribute("value");
+        assertThat(newText).isEqualTo(newText);
+    }
+
+
+    public void changeLastname(String lastname) { driver.findElement(lastName).sendKeys(lastname); }
+
+    public void validateLn (){
+        String newText = driver.findElement(lastName).getAttribute("value");
+        assertThat(newText).isEqualTo(newText);
     }
 
     public void changeNumber(String phone) {
         driver.findElement(phoneNum).sendKeys(phone);
     }
+    public void validatePhone (){
+        String newText = driver.findElement(phoneNum).getAttribute("value");
+        assertThat(newText).isEqualTo(newText);
+    }
 
     public void changeCity(String city) {
         driver.findElement(cityCha).sendKeys(city);
+    }
+    public void validateCity (){
+        String newText = driver.findElement(cityCha).getAttribute("value");
+        assertThat(newText).isEqualTo(newText);
     }
 
     public void clickSave() {
