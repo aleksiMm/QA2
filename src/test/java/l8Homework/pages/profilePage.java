@@ -27,7 +27,7 @@ public class profilePage extends BasePage {
 
     public void validateFn (){
         String newText = driver.findElement(firstName).getAttribute("value");
-        assertThat(newText).isEqualTo(newText);
+        assertThat(newText).isEqualTo("Ale");
     }
 
 
@@ -35,7 +35,7 @@ public class profilePage extends BasePage {
 
     public void validateLn (){
         String newText = driver.findElement(lastName).getAttribute("value");
-        assertThat(newText).isEqualTo(newText);
+        assertThat(newText).isEqualTo("Smit");
     }
 
     public void changeNumber(String phone) {
@@ -43,7 +43,7 @@ public class profilePage extends BasePage {
     }
     public void validatePhone (){
         String newText = driver.findElement(phoneNum).getAttribute("value");
-        assertThat(newText).isEqualTo(newText);
+        assertThat(newText).isEqualTo("12345678");
     }
 
     public void changeCity(String city) {
@@ -51,7 +51,7 @@ public class profilePage extends BasePage {
     }
     public void validateCity (){
         String newText = driver.findElement(cityCha).getAttribute("value");
-        assertThat(newText).isEqualTo(newText);
+        assertThat(newText).isEqualTo("Rio");
     }
 
     public void clickSave() {
